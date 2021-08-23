@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  //Opgave 1 Knap skift i mellem to farver
+  //Opgave 1 Knap skift i mellem to farver reverse
   var button = document.getElementById("my-button");
     function changeColor() {
         button.addEventListener("click", toggle);
@@ -29,7 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     divide(4, 3);
     
-};      
+  };      
     console.log(divide(4, 3));
       
+  //Opgave 3 skjul Element Via Css Selector
+
+  function skjulElementViaCssSelector (cssSelector) {
+    let displayElement = document.querySelector(cssSelector);
+    displayElement.style.display = 'none';
+  };
+
+  skjulElementViaCssSelector ('.result');
+
 });
