@@ -1,8 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   //Opgave 1 Knap skift i mellem to farver reverse
-  var button = document.getElementById("my-button");
-    function changeColor() {
+  var button = document.querySelector('#my-button');
+  let colorArray = ['yellow', 'aqua'];
+  
+  button.addEventListener('click', function(){
+    button.style.backgroundColor = colorArray [0];
+    colorArray.reverse();
+//    newColor;
+  });
+  
+  
+  /*
+  function changeColor() {
         button.addEventListener("click", toggle);
       };
       
@@ -12,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       
       changeColor();
+      */
 
   //Opgave 2 Regnestykke
 
