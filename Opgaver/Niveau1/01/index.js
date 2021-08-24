@@ -27,22 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
   //Opgave 2 Regnestykke
 
   let numbera = document.querySelector('#number_a');
-  let valuea = 4;
-  numbera.textContent = valuea
+  let a = 4;
+  numbera.textContent = a
 
   let numberb = document.querySelector('#number_b');
-  let valueb = 3;
-  numberb.textContent = valueb
-  function divide (a, b) {
+  let b = 3;
+  numberb.textContent = b
+
+
+  function beregnForhold (a, b) {
     if (a > 0 && b > 0) {
       return a / b;
     }
-
-    divide(4, 3);
-    
   };      
-    console.log(divide(4, 3));
-      
+  
+  let resultat = beregnForhold(4, 3);
+  
+      console.log(resultat);
+
+
+
   //Opgave 3 skjul Element Via Css Selector
 
   function skjulElementViaCssSelector (cssSelector) {
