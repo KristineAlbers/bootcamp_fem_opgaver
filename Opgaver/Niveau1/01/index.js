@@ -51,7 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function skjulElementViaCssSelector (cssSelector) {
     let displayElement = document.querySelector(cssSelector);
+    //if(displayElement){
     displayElement.style.display = 'none';
+  //}
   };
 
   skjulElementViaCssSelector ('.result');
