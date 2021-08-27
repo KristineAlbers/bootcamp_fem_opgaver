@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Opgave 1 Knap skift i mellem to farver reverse
   var button = document.querySelector('#my-button');
-  let colorArray = ['pink', 'gray'];
+  let colorArray = ['pink', 'gray', 'blue'];
   
   button.addEventListener('click', function(){
     button.style.backgroundColor = colorArray [0];
