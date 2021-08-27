@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Opgave 1 Knap skift i mellem to farver reverse
   var button = document.querySelector('#my-button');
-  let colorArray = ['yellow', 'aqua'];
+  let colorArray = ['pink', 'gray'];
   
   button.addEventListener('click', function(){
     button.style.backgroundColor = colorArray [0];
@@ -10,19 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //    newColor;
   });
   
-  
-  /*
-  function changeColor() {
-        button.addEventListener("click", toggle);
-      };
-      
-      function toggle() {
-        var backColor = button.style.backgroundColor;
-        button.style.backgroundColor = backColor === "black" ? "yellow" : "black";
-      };
-      
-      changeColor();
-      */
 
   //Opgave 2 Regnestykke
 
